@@ -15,6 +15,7 @@ public class PicturePanel extends JPanel implements MouseListener, MouseMotionLi
     private String mouseStatus;
     private int mouseX; 
     private int mouseY;
+    //private int pointSize;
     private BufferedImage picture;
 
 
@@ -25,6 +26,8 @@ public class PicturePanel extends JPanel implements MouseListener, MouseMotionLi
         addMouseMotionListener(this);
         mouseX = 1;
         mouseY = 1;
+        //pointSize = 20;
+        
         picdata = new ArrayList<PictureData>();
     }
 
@@ -57,7 +60,7 @@ public class PicturePanel extends JPanel implements MouseListener, MouseMotionLi
     }
 
     public void mouseDragged(MouseEvent e){
-    }
+    } //does not show where mouse is placed around the screen
 
     public ArrayList<PictureData> getPicdata() {
         return picdata;
